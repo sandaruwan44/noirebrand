@@ -8,27 +8,28 @@
 </head>
 <body>
 
-<header>
+<header class="navbar">
   <a href="index.html" class="logo">NOIRÉ</a>
   <nav>
-    <a href="index.html">HOME</a>
-    <a href="shop.html">SHOP</a>
-    <a href="shop.html#collection">COLLECTION</a>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="collection.html">Collection</a>
+    <a href="cart.html">Cart</a>
   </nav>
 </header>
 
 <section class="detail-page">
-  <div class="detail-img">
-    <img src="img/moon.png" alt="Moon Amber">
+  <div class="detail-img reveal">
+    <img src="img/moon.png">
   </div>
 
-  <div class="detail-text">
+  <div class="detail-info reveal">
+    <p class="jp">ムーン アンバー</p>
     <h1>Moon Amber</h1>
-    <h4>ムーン アンバー</h4>
-    <p>Amber • Soft • Mysterious</p>
-    <p class="jp">やわらかいアンバーが、静かな夜を感じさせます。</p>
-
-    <h2>¥10,900</h2>
+    <h3>¥10,900</h3>
+    <p>
+      A soft amber fragrance with gentle sweetness and mysterious night mood.
+    </p>
 
     <ul>
       <li>Top Notes: Citrus, Saffron</li>
@@ -36,7 +37,7 @@
       <li>Base Notes: Musk, Vanilla</li>
     </ul>
 
-    <button>Add to Cart</button>
+    <button onclick="goCart('Moon Amber','¥10,900')">Add to Cart</button>
   </div>
 </section>
 

@@ -1,61 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Cart</title>
-
-<link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart | NOIRÉ</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-
-<a href="index.html" class="logo">NOIRÉ</a>
-
-<nav>
-
-<a href="index.html">HOME</a>
-<a href="shop.html">SHOP</a>
-<a href="collection.html">COLLECTION</a>
-
-</nav>
-
+<header class="navbar">
+  <a href="index.html" class="logo">NOIRÉ</a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="collection.html">Collection</a>
+  </nav>
 </header>
 
-<section class="cart-page">
+<section class="cart-page reveal">
+  <h1>Your Cart</h1>
+  <p class="jp">カート</p>
 
-<h1>YOUR CART</h1>
+  <div class="cart-card">
+    <img src="img/midnight oud.png">
+    <div>
+      <h2 id="cartName">NOIRÉ Perfume</h2>
+      <p>Luxury fragrance product</p>
+      <h3 id="cartPrice">¥12,900</h3>
+    </div>
+  </div>
 
-<p>
-カートに追加されました
-</p>
-
-<div class="cart-box">
-
-<img src="hero.png">
-
-<div>
-
-<h2>Midnight Oud</h2>
-
-<p>Luxury Perfume</p>
-
-<h3>¥12,900</h3>
-
-</div>
-
-</div>
-
-<button class="checkout">
-CHECKOUT
-</button>
-
+  <button class="checkout">Checkout</button>
 </section>
 
+<script src="script.js"></script>
 </body>
 </html>

@@ -8,27 +8,29 @@
 </head>
 <body>
 
-<header>
+<header class="navbar">
   <a href="index.html" class="logo">NOIRÉ</a>
   <nav>
-    <a href="index.html">HOME</a>
-    <a href="shop.html">SHOP</a>
-    <a href="shop.html#collection">COLLECTION</a>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="collection.html">Collection</a>
+    <a href="cart.html">Cart</a>
   </nav>
 </header>
 
 <section class="detail-page">
-  <div class="detail-img">
-    <img src="img/midnight oud.png" alt="Midnight Oud">
+  <div class="detail-img reveal">
+    <img src="img/midnight oud.png">
   </div>
 
-  <div class="detail-text">
+  <div class="detail-info reveal">
+    <p class="jp">ミッドナイト ウード</p>
     <h1>Midnight Oud</h1>
-    <h4>ミッドナイト ウード</h4>
-    <p>Woody • Warm • Intense</p>
-    <p class="jp">深いウードの香りが、夜の上品さを演出します。</p>
-
-    <h2>¥12,900</h2>
+    <h3>¥12,900</h3>
+    <p>
+      A deep woody fragrance with warm oud, amber and soft musk.
+      Perfect for evening elegance.
+    </p>
 
     <ul>
       <li>Top Notes: Bergamot, Black Pepper</li>
@@ -36,7 +38,7 @@
       <li>Base Notes: Amber, Musk</li>
     </ul>
 
-    <button>Add to Cart</button>
+    <button onclick="goCart('Midnight Oud','¥12,900')">Add to Cart</button>
   </div>
 </section>
 

@@ -1,114 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>NOIRÉ Shop</title>
-
+  <title>NOIRÉ | Shop</title>
   <link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
 
-<header>
-
+<header class="navbar">
   <a href="index.html" class="logo">NOIRÉ</a>
-
   <nav>
-
-    <a href="index.html">HOME</a>
-    <a href="shop.html">SHOP</a>
-    <a href="collection.html">COLLECTION</a>
-    <a href="cart.html">CART</a>
-
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="collection.html">Collection</a>
+    <a href="cart.html">Cart</a>
   </nav>
-
 </header>
 
-<section class="page-hero">
-
-  <h1>SHOP</h1>
-
-  <p>
-    高級フレグランスコレクション
-  </p>
-
+<section class="page-title">
+  <h1>Shop</h1>
+  <p class="jp">香水を選ぶ</p>
 </section>
 
-<section class="products">
+<section class="product-grid">
 
-  <div class="product-card">
-
-    <img src="hero.png">
-
+  <div class="product-card reveal">
+    <img src="img/midnight oud.png" alt="Midnight Oud">
     <h2>Midnight Oud</h2>
-
+    <p class="jp">ミッドナイト ウード</p>
     <p>Woody • Warm • Intense</p>
-
     <h3>¥12,900</h3>
-
-    <div class="card-buttons">
-
-      <a href="midnight-oud.html">DETAILS</a>
-
-      <button onclick="addToCart()">
-        BUY NOW
-      </button>
-
+    <div class="card-actions">
+      <a href="midnight-oud.html">Details</a>
+      <button onclick="goCart('Midnight Oud','¥12,900')">Buy</button>
     </div>
-
   </div>
 
-  <div class="product-card">
-
-    <img src="hero.png">
-
+  <div class="product-card reveal">
+    <img src="img/velvet.png" alt="Velvet Smoke">
     <h2>Velvet Smoke</h2>
-
-    <p>Smoky • Spicy • Seductive</p>
-
+    <p class="jp">ベルベット スモーク</p>
+    <p>Smoky • Spicy • Rich</p>
     <h3>¥11,500</h3>
-
-    <div class="card-buttons">
-
-      <a href="velvet-smoke.html">DETAILS</a>
-
-      <button onclick="addToCart()">
-        BUY NOW
-      </button>
-
+    <div class="card-actions">
+      <a href="velvet-smoke.html">Details</a>
+      <button onclick="goCart('Velvet Smoke','¥11,500')">Buy</button>
     </div>
-
   </div>
 
-  <div class="product-card">
-
-    <img src="hero.png">
-
+  <div class="product-card reveal">
+    <img src="img/moon.png" alt="Moon Amber">
     <h2>Moon Amber</h2>
-
-    <p>Soft • Amber • Mysterious</p>
-
+    <p class="jp">ムーン アンバー</p>
+    <p>Amber • Soft • Mysterious</p>
     <h3>¥10,900</h3>
-
-    <div class="card-buttons">
-
-      <a href="moon-amber.html">DETAILS</a>
-
-      <button onclick="addToCart()">
-        BUY NOW
-      </button>
-
+    <div class="card-actions">
+      <a href="moon-amber.html">Details</a>
+      <button onclick="goCart('Moon Amber','¥10,900')">Buy</button>
     </div>
-
   </div>
 
 </section>
 
 <script src="script.js"></script>
-
 </body>
 </html>

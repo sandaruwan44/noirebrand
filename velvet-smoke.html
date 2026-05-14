@@ -8,27 +8,28 @@
 </head>
 <body>
 
-<header>
+<header class="navbar">
   <a href="index.html" class="logo">NOIRÉ</a>
   <nav>
-    <a href="index.html">HOME</a>
-    <a href="shop.html">SHOP</a>
-    <a href="shop.html#collection">COLLECTION</a>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="collection.html">Collection</a>
+    <a href="cart.html">Cart</a>
   </nav>
 </header>
 
 <section class="detail-page">
-  <div class="detail-img">
-    <img src="img/velvet.png" alt="Velvet Smoke">
+  <div class="detail-img reveal">
+    <img src="img/velvet.png">
   </div>
 
-  <div class="detail-text">
+  <div class="detail-info reveal">
+    <p class="jp">ベルベット スモーク</p>
     <h1>Velvet Smoke</h1>
-    <h4>ベルベット スモーク</h4>
-    <p>Smoky • Spicy • Seductive</p>
-    <p class="jp">スモーキーでスパイシーな、大人の香りです。</p>
-
-    <h2>¥11,500</h2>
+    <h3>¥11,500</h3>
+    <p>
+      A smoky and seductive scent with spicy warmth and smooth vanilla wood.
+    </p>
 
     <ul>
       <li>Top Notes: Cinnamon, Pepper</li>
@@ -36,7 +37,7 @@
       <li>Base Notes: Vanilla, Wood</li>
     </ul>
 
-    <button>Add to Cart</button>
+    <button onclick="goCart('Velvet Smoke','¥11,500')">Add to Cart</button>
   </div>
 </section>
 
