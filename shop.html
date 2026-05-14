@@ -1,72 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NOIRÉ | Shop</title>
+
+  <title>NOIRÉ Shop</title>
+
   <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
 <header>
+
   <a href="index.html" class="logo">NOIRÉ</a>
+
   <nav>
+
     <a href="index.html">HOME</a>
     <a href="shop.html">SHOP</a>
-    <a href="#collection">COLLECTION</a>
-    <a href="index.html#about">ABOUT</a>
-    <a href="index.html#contact">CONTACT</a>
+    <a href="collection.html">COLLECTION</a>
+    <a href="cart.html">CART</a>
+
   </nav>
+
 </header>
 
-<section class="shop-hero">
-  <h1>OUR COLLECTION</h1>
-  <h4>香水コレクション</h4>
-  <p>Choose your signature scent.</p>
+<section class="page-hero">
+
+  <h1>SHOP</h1>
+
+  <p>
+    高級フレグランスコレクション
+  </p>
+
 </section>
 
-<section id="collection" class="products">
+<section class="products">
 
-  <div class="product-grid">
+  <div class="product-card">
 
-    <div class="product-card">
-      <img src="img/midnight oud.png" alt="Midnight Oud">
-      <h3>Midnight Oud</h3>
-      <h4>ミッドナイト ウード</h4>
-      <p>Woody • Warm • Intense</p>
-      <p class="jp">深くあたたかい、上品な香り。</p>
-      <h5>¥12,900</h5>
-      <a href="midnight-oud.html" class="card-btn">VIEW DETAILS</a>
+    <img src="hero.png">
+
+    <h2>Midnight Oud</h2>
+
+    <p>Woody • Warm • Intense</p>
+
+    <h3>¥12,900</h3>
+
+    <div class="card-buttons">
+
+      <a href="midnight-oud.html">DETAILS</a>
+
+      <button onclick="addToCart()">
+        BUY NOW
+      </button>
+
     </div>
 
-    <div class="product-card">
-      <img src="img/velvet.png" alt="Velvet Smoke">
-      <h3>Velvet Smoke</h3>
-      <h4>ベルベット スモーク</h4>
-      <p>Smoky • Spicy • Seductive</p>
-      <p class="jp">大人っぽく、ミステリアスな香り。</p>
-      <h5>¥11,500</h5>
-      <a href="velvet-smoke.html" class="card-btn">VIEW DETAILS</a>
+  </div>
+
+  <div class="product-card">
+
+    <img src="hero.png">
+
+    <h2>Velvet Smoke</h2>
+
+    <p>Smoky • Spicy • Seductive</p>
+
+    <h3>¥11,500</h3>
+
+    <div class="card-buttons">
+
+      <a href="velvet-smoke.html">DETAILS</a>
+
+      <button onclick="addToCart()">
+        BUY NOW
+      </button>
+
     </div>
 
-    <div class="product-card">
-      <img src="img/moon.png" alt="Moon Amber">
-      <h3>Moon Amber</h3>
-      <h4>ムーン アンバー</h4>
-      <p>Amber • Soft • Mysterious</p>
-      <p class="jp">やさしく甘い、夜に似合う香り。</p>
-      <h5>¥10,900</h5>
-      <a href="moon-amber.html" class="card-btn">VIEW DETAILS</a>
+  </div>
+
+  <div class="product-card">
+
+    <img src="hero.png">
+
+    <h2>Moon Amber</h2>
+
+    <p>Soft • Amber • Mysterious</p>
+
+    <h3>¥10,900</h3>
+
+    <div class="card-buttons">
+
+      <a href="moon-amber.html">DETAILS</a>
+
+      <button onclick="addToCart()">
+        BUY NOW
+      </button>
+
     </div>
 
   </div>
 
 </section>
 
-<footer>
-  <h2>NOIRÉ</h2>
-  <p>Luxury Perfume Brand</p>
-</footer>
+<script src="script.js"></script>
 
 </body>
 </html>
