@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Playfair+Display:wght@600;700&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:#050505;
+  color:white;
+  font-family:'Montserrat', sans-serif;
+}
+
+header{
+  width:100%;
+  padding:28px 8%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:10;
+}
+
+.logo{
+  color:#d4aa70;
+  font-size:42px;
+  letter-spacing:5px;
+  text-decoration:none;
+  font-family:'Playfair Display', serif;
+}
+
+nav{
+  display:flex;
+  gap:35px;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  font-size:14px;
+  letter-spacing:2px;
+}
+
+nav a:hover{
+  color:#d4aa70;
+}
+
+.hero{
+  height:100vh;
+  background:
+    linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.65)),
+    url("/img/hero.png");
+  background-size:cover;
+  background-position:center;
+  position:relative;
+}
+
+.hero-text{
+  position:absolute;
+  top:50%;
+  left:8%;
+  transform:translateY(-50%);
+}
+
+.hero-text p{
+  color:#d4aa70;
+  letter-spacing:6px;
+  margin-bottom:25px;
+}
+
+.hero-text h1{
+  font-size:115px;
+  color:#d4aa70;
+  font-family:'Playfair Display', serif;
+  letter-spacing:10px;
+}
+
+.hero-text h2{
+  font-size:40px;
+  color:#d4aa70;
+  letter-spacing:20px;
+  margin-bottom:30px;
+}
+
+.hero-text span{
+  display:block;
+  width:90px;
+  height:2px;
+  background:#d4aa70;
+  margin-bottom:30px;
+}
+
+.hero-text .desc{
+  color:white;
+  letter-spacing:0;
+  font-size:20px;
+  line-height:1.8;
+  max-width:420px;
+}
+
+.btn,
+.card-btn{
+  display:inline-block;
+  margin-top:25px;
+  padding:16px 38px;
+  border:1px solid #d4aa70;
+  color:#d4aa70;
+  background:transparent;
+  text-decoration:none;
+  letter-spacing:2px;
+  transition:.3s;
+}
+
+.btn:hover,
+.card-btn:hover,
+button:hover{
+  background:#d4aa70;
+  color:black;
+}
+
+.about{
+  padding:100px 8%;
+  text-align:center;
+}
+
+.about h2,
+.shop-hero h1{
+  color:#d4aa70;
+  font-size:45px;
+  font-family:'Playfair Display', serif;
+}
+
+h4{
+  color:#d4aa70;
+  margin:10px 0 20px;
+  font-weight:400;
+}
+
+.about p{
+  max-width:850px;
+  margin:auto;
+  color:#ccc;
+  line-height:2;
+}
+
+.features{
+  padding:80px 8%;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+}
+
+.features div{
+  padding:35px;
+  background:#101010;
+  border:1px solid #2a2a2a;
+  text-align:center;
+}
+
+.features h3{
+  color:#d4aa70;
+}
+
+.shop-hero{
+  height:55vh;
+  background:
+    linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.8)),
+    url("/img/hero.png");
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.products{
+  padding:90px 8%;
+}
+
+.product-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+}
+
+.product-card{
+  background:#101010;
+  border:1px solid #292929;
+  padding:20px;
+  transition:.3s;
+}
+
+.product-card:hover{
+  transform:translateY(-10px);
+  border-color:#d4aa70;
+}
+
+.product-card img{
+  width:100%;
+  height:320px;
+  object-fit:cover;
+  margin-bottom:20px;
+}
+
+.product-card h3{
+  color:#d4aa70;
+  font-size:25px;
+}
+
+.product-card p{
+  color:#bbb;
+  margin-bottom:10px;
+}
+
+.jp{
+  color:#c9b28a !important;
+  font-size:14px;
+}
+
+.product-card h5{
+  font-size:20px;
+  margin-top:15px;
+}
+
+.detail-page{
+  min-height:100vh;
+  padding:140px 8% 80px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+}
+
+.detail-img img{
+  width:100%;
+  border:1px solid #333;
+}
+
+.detail-text h1{
+  color:#d4aa70;
+  font-size:60px;
+  font-family:'Playfair Display', serif;
+}
+
+.detail-text h2{
+  color:white;
+  font-size:35px;
+  margin:30px 0;
+}
+
+.detail-text p{
+  color:#ccc;
+  line-height:1.8;
+}
+
+.detail-text ul{
+  margin:30px 0;
+  line-height:2;
+  color:#ccc;
+}
+
+button{
+  padding:16px 38px;
+  border:1px solid #d4aa70;
+  background:transparent;
+  color:#d4aa70;
+  cursor:pointer;
+  letter-spacing:2px;
+}
+
+footer{
+  padding:60px 8%;
+  text-align:center;
+  border-top:1px solid #222;
+}
+
+footer h2{
+  color:#d4aa70;
+  font-size:42px;
+  letter-spacing:5px;
+  font-family:'Playfair Display', serif;
+}
+
+@media(max-width:900px){
+  header{
+    flex-direction:column;
+    gap:18px;
+  }
+
+  nav{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:18px;
+  }
+
+  .hero-text h1{
+    font-size:65px;
+  }
+
+  .hero-text h2{
+    font-size:28px;
+    letter-spacing:12px;
+  }
+
+  .features,
+  .product-grid,
+  .detail-page{
+    grid-template-columns:1fr;
+  }
+
+  .detail-text h1{
+    font-size:45px;
+  }
+}
